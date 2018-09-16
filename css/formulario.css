@@ -24,6 +24,7 @@ main {
 
 main h1 {
     text-align: left;
+    font-size: 40px;
 }
 
 header nav {
@@ -49,15 +50,6 @@ header nav ul li a:hover {
     color: white;
 }
 
-/* section{
-    float: left;
-    width: 750px;
-    height: 450px;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    background-color: yellowgreen;
-} */
-
 footer {
     clear: both;
     width: 950px;
@@ -73,72 +65,40 @@ footer {
     width: 256px;
     height: 85px;
     margin-left: 73%;
-    margin-top: -6%;
+    margin-top: -90%;
 }
 
-#Libros img {
-    width: 130px;
-    height: 180px;
-    margin-right: 50px;
-    padding-top: 10px;
-}
+/* ----------------------------------------------------------------------------------- */
 
-#Libros {
+
+section{
     float: left;
-    width: 750px;
-    height: 450px;
+    width: 600px;
+    height: 500px;
     margin-top: 2px;
     margin-bottom: 5px;
-}
-
-#Libros p {
-    font-style: oblique;
-    font-size: 110%;
-}
+} 
 
 aside {
     margin-top: 5px;
     float: left;
-    width: 195px;
-    height: 393px;
-    margin-left: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
 }
 
-/* aside:nth-of-type(2){
-    height: 5px;
-}  */
-
-.vistos {
-    width: 57px;
-    height: 115px;
-    margin-left: 4px;
-}
-
-
-
-.redes {
-    width: 50px;
-    height: 50px;
-    margin-left: 7px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-#HA {
+aside p, h1{
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-style: italic;
-    background-color: rgb(240, 86, 86);
+    font-family: "Comic Sans MS", cursive;
+    font-size: 13px;
 }
 
-#HB {
-    text-align: center;
-    margin-top: 62px;
-    margin-bottom: 15px;
-    font-style: italic;
-    background-color: rgb(240, 86, 86);
+aside img{
+	padding-top: 7px;
+	width: 310px;
+	height: 200px;
 }
+
 
 /* ----------------------------------------------------------------------------------- */
 
@@ -170,3 +130,66 @@ aside {
     visibility: visible;
     opacity: 1;
 }
+
+/* ----------------------------------------------------------------------------------- */
+
+button {
+    background-color: rgb(240, 86, 86);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive;
+    width: 100px;
+    height: 35px;
+    
+}
+
+button:hover {
+	color: white;
+	font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+label {
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	float: left;
+	font-family: "Comic Sans MS", cursive;
+}
+
+input {
+	padding: 2px;
+	font-size: inherit;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form {
+	margin: 15px auto;
+	width: 500px;
+	font-family: "Comic Sans MS", cursive;
+}
+
+form select {
+    padding: 2px;
+    font-size: inherit;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+
+/* ----------------------------------------------------------------------------------- */
+
+.TableStilo{
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.TableStilo th{
+    border: 1px solid black;
+    padding: 3px 4px;
+}
+

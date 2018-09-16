@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formulario.css">
+    
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="container">
+        <main id="principal">
+            <h1>BooksSY</h1>
+            <h3>welcome to your online library</h3>
+            <img src="imagenes/Other/logo.jpg">
+        </main>
+        <div>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Novels.html">Novels</a>
+                        </li>
+                        <li>
+                            <a href="Terror.html">Terror</a>
+                        </li>
+                        <li>
+                            <a href="Science.html">Science </a>
+                        </li>
+                        <li>
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Others</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="Science.html">Science Fiction</a>
+                                        </li>
+                                        <li>
+                                            <a href="Wellness.html">Wellness</a>
+                                        </li>
+                                        <li>
+                                            <a href="Youngs.html">Youngs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+        <article>
+            <section>
+                <div class="middle">
+                    <form name="formulario">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Nombres: </label>
+                                </td>
+                                <td>
+                                    <input id="nombres" type="text" placeholder="Nombres" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Apellidos: </label>
+                                </td>
+                                <td>
+                                    <input id="apellidos" type="text" placeholder="Apellidos" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Cedula</label>
+                                </td>
+                                <td>
+                                    <input id="cedula" type="number" placeholder="12345678" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Telefono</label>
+                                </td>
+                                <td>
+                                    <input id="telefono" type="number" placeholder="3012373784" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Correo Electronico</label>
+                                </td>
+                                <td>
+                                    <input id="email" type="email" placeholder="Email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Fecha de nacimiento</label>
+                                </td>
+                                <td>
+                                    <input id="fecha" type="date" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Libros Favoritos</label>
+                                </td>
+                                <td>
+                                    <select name="select" id="tipo">
+                                        <option value="Seleccione">Seleccione</option>
+                                        <option value="Terror">Terror</option>
+                                        <option value="Novelas">Novelas</option>
+                                        <option value="Ciencia">Ciencia</option>
+                                        <option value="CienciaFiccion">CienciaFiccion</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Sexo</label>
+                                </td>
+                                <td>
+                                    <div id="sexo">
+                                        <input type="radio" name="sexo" id="mas" value="Hombre">Hombre
+                                        <input type="radio" name="sexo" id="fem" value="Mujer">Mujer
+                                        <input type="radio" name="sexo" id="otros" value="Otros">Otros
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td>
+                            		<label>Descripcion</label>
+                            	</td>
+                            	<td>
+                            		<textarea name="texto" id="texto" rows="10" cols="25"></textarea>
+                            	</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Acepta Terminos y Condiciones</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="terminos" id="terminos" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td align="center">
+                                    <button id="boton" type="reset" onclick="Enviar()">Suscribete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </section>
+        </article>
+
+
+        <aside>
+        	<h1>Termino y Condiciones</h1>
+            <p>Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico, todo estos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento.</p>
+
+            <img src="imagenes/Other/logo2.jpg" >
+        </aside>
+
+
+        <div>
+            <table id="tabla" class="TableStilo">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th> Apellidos</th>
+                        <th>Cedula</th>
+                        <th>Telefono</th>
+                        <th>Correo Electronico</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Libros Favoritos</th>
+                        <th>Sexo</th>
+                        <th>Descripcion</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+
+        <footer>
+            &copy; Samuel Narvaez
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
